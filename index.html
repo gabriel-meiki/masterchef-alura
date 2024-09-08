@@ -1,24 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comidas MasterChef</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MasterChef Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="imagens/logo-masterchef.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="" alt="logo do MasterChef">
-        </div>
-        <nav>
-            <ul>
-                <li>Buscador de Comidas</li>
-                <li>História</li>
-                <li>Ganhadores</li> <!--Nesta seção terá um campo de busca onde poderá pesquisar quais foram os vencedores e pesquisar seus detalhes (tipo da comida final, ano ganhar, temporada do programa, link de suas redes sociais ...)-->
-                <li>Detalhes do programa (atualmente)</li>
-                <li>FAQ de dúvidas</li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container">
+      <div class="container-logo">
+        <img src="imagens/logo-masterchef.png" alt="Logo MasterChef" class="logo">
+        <p>Masterchef Alura</p>
+    </div>
+      <nav>
+        <ul>
+          <li><a href="#">Buscador de Comida</a></li>
+          <li><a href="#">História</a></li>
+          <li><a href="#">Ganhadores</a></li>
+          <li><a href="#">Redes Sociais</a></li>
+          <li><a href="#">Dúvidas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="section-home">
+    <div class="container">
+      <h1>Bem-vindo ao Mundo do MasterChef!</h1>
+      <p>Explore comidas incríveis, conheça os chefs e acompanhe os melhores pratos.</p>
+      <input type="text" placeholder="Pesquise por pratos, ingredientes ou chefs do Masterchef" class="search-input">
+    </div>
+  </section>
+
+  <section id="historia" class="section-historia">
+    <div class="container">
+      <div class="image-wrapper">
+        <img src="https://th.bing.com/th/id/R.eabd4c1bc42ace9270eb6928f1acf453?rik=CUQGesDSA2Fp8g&riu=http%3a%2f%2fwww.estrelando.com.br%2fuploads%2f2015%2f09%2f14%2fchefs-do-master-chef-brasil-1442264669.jpg&ehk=apBdjgtQ0Nw5SFm4klBIZiTDBE8rbfN5AKDJsHLMj1M%3d&risl=&pid=ImgRaw&r=0" alt="Imagem MasterChef" class="image">
+      </div>
+      <div class="content-wrapper">
+        <h2>A História do MasterChef</h2>
+        <p>O MasterChef é um reality show de culinária que teve origem no Reino Unido, em 1990. O programa rapidamente se tornou um sucesso internacional, com versões sendo transmitidas em diversos países, incluindo o Brasil. O objetivo do MasterChef é encontrar o melhor cozinheiro amador do país, através de uma série de desafios culinários.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  <section id="video" class="section-video">
+    <div class="container">
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="content-wrapper">
+        <h2>Explore o Mundo do MasterChef</h2>
+        <p>Assista aos melhores momentos do programa e inspire-se com as receitas dos participantes.</p>
+        <ul class="social-media-list">
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-faq">
+    <div class="container">
+      <h2>Perguntas Frequentes</h2>
+      <details>
+        <summary>Como posso participar do MasterChef?</summary>
+        <p>Para participar do MasterChef, acesse o site oficial do programa e siga as instruções de inscrição.</p>
+      </details>
+      <details>
+        <summary>Quais os prêmios do MasterChef?</summary>
+        <p>O vencedor do MasterChef recebe um prêmio em dinheiro, a oportunidade de publicar um livro de receitas e outros benefícios.</p>
+      </details>
+      <details>
+        <summary>Onde posso assistir ao MasterChef?</summary>
+        <p>O MasterChef é exibido na [nome do canal] às [horário] de [dia da semana].</p>
+      </details>
+      <details>
+        <summary>Quais os jurados do MasterChef?</summary>
+        <p>Os jurados do MasterChef são [nome dos jurados].</p>
+      </details>
+      <details>
+        <summary>Como posso entrar em contato com a produção do MasterChef?</summary>
+        <p>Para entrar em contato com a produção do MasterChef, acesse o site oficial do programa e procure a seção "Fale Conosco".</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="creator-info">
+        <p>Criado por:</p>
+        <ul class="link-list">
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="site-info">
+        <p>Site:</p>
+        <ul class="link-list">
+          <li><a href="#">Repositório GitHub</a></li>
+        </ul>
+      </div>
+      <div class="social-media-info">
+        <p>Redes Sociais MasterChef:</p>
+        <ul class="link-list">
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+-->
